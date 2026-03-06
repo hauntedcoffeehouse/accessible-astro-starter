@@ -291,7 +291,6 @@ import { LauncherTrigger } from 'accessible-astro-launcher'
 
         a:hover,
         a:focus-visible,
-        .is-active,
         button[aria-expanded='true'],
         .has-dropdown > button:hover,
         .has-dropdown > button:focus-visible {
@@ -302,6 +301,9 @@ import { LauncherTrigger } from 'accessible-astro-launcher'
         }
 
         .is-active {
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 7px;
           font-weight: bold;
         }
 
